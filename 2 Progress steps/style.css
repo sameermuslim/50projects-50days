@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #3498db;
+  --second-color: #e0e0e0;
+  --background-color: #f6f7fb;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+}
+.container {
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.primary {
+  color: white;
+  background-color: var(--primary-color);
+}
+.secondry {
+  background-color: var(--second-color);
+}
+.cercle {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999999;
+  border: solid 3px var(--second-color);
+  font-weight: 400;
+  transition: 0.4s ease;
+}
+.active-border {
+  border: solid 4px var(--primary-color);
+}
+.line {
+  height: 4px;
+  width: 70px;
+  background-color: #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.active-line {
+  background-color: var(--primary-color);
+}
+
+.progress-box {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.button-box {
+  padding: 0px 20px;
+}
+.btn {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 8px 30px;
+  border: none;
+  margin: 5px;
+  color: white;
+  background-color: var(--primary-color);
+}
+.disabled {
+  background-color: var(--second-color);
+  cursor: not-allowed;
+}
