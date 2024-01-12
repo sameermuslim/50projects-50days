@@ -1,0 +1,198 @@
+/* Global variables */
+:root {
+  --background-color: #333333;
+  --main-color: #ff7979;
+  --text-color: #fafafa;
+  --heading-color: #222222;
+  --paragraph-color: #333333;
+  --font-size-large: large;
+  --font-size-medium: 14px;
+}
+
+/* Reset and basic styling */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+/* Global styling for images */
+img {
+  width: 20px;
+}
+
+/* Main container styles */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  min-height: 100vh;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+}
+
+/* Rotation styles */
+.rotate {
+  transform: rotate(-20deg);
+}
+
+.the-rotate {
+  transform: rotate(-70deg);
+}
+
+/* Container styling */
+.container {
+  background-color: #fff;
+  padding: 120px 40px;
+}
+
+/* Navigation button styles */
+.nav-btn {
+  background-color: var(--main-color);
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  z-index: 1;
+}
+
+.nav-btn-item {
+  width: 30px;
+}
+
+/* Navigation button animation styles */
+.btns {
+  width: inherit;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  transition: transform 0.5s linear;
+}
+
+.burger-menu {
+  transform: rotate(90deg);
+  margin-left: -3px;
+  margin-bottom: 43px;
+}
+
+.close {
+  margin-right: -5px;
+  margin-bottom: 40px;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 45%;
+}
+
+/* Navigation list styles */
+.nav-list {
+  position: absolute;
+  bottom: 50px;
+}
+
+/* Menu icon styles */
+.menu-icon {
+  width: 30px;
+}
+
+/* Menu item styles */
+.menu-item {
+  display: flex;
+}
+
+.menu-item a {
+  color: var(--text-color);
+  list-style: none;
+}
+
+/* List item styles */
+li {
+  margin: 25px 0;
+  transform: translateX(-200%);
+  transition: transform 0.4s ease-in;
+}
+
+li + li {
+  margin-left: 20px;
+  transform: translateX(-200%);
+  transition: transform 0.4s ease-in;
+}
+
+li + li + li {
+  margin-left: 50px;
+  transform: translateX(-300%);
+  transition: transform 0.4s ease-in;
+}
+
+/* List and link styles */
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
+}
+
+/* List item container styles */
+li div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation animation styles */
+.nav-animation {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+/* Additional container styling */
+.container {
+  padding: 70px 20%;
+}
+
+/* Title and heading styles */
+.title,
+.image-title {
+  color: var(--heading-color);
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Paragraph styles */
+p {
+  color: var(--paragraph-color);
+}
+
+/* Article content styles */
+.article-content {
+  margin-right: 5px;
+  text-align: justify;
+}
+
+/* Author information styles */
+.aouther {
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-medium);
+}
+
+/* Article image styles */
+.article-image {
+  width: 100%;
+}
